@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition-duration: 0.15s;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 0px 3px 0px #BBBBBB;
+    z-index: 98;
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 317px;
+
+        .hamburger {
+            display: none;
+        }
+
+        span {
+            cursor: pointer;
+        }
+
+        img {
+            width: 20px;
+            cursor: pointer;
+        }
+
+        .header-links {
+            display: flex;
+            gap: 30px;
+
+            span {
+                color: #000000;
+                cursor: pointer;
+
+                &:hover {
+                    color: #0099FF;
+                }
+
+                &:active {
+                    color: #004CFF;
+                }
+            }
+        }
+    }    
+}
+
+main {
+    margin-top: 100px;
+
+    .full-main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title-and-review {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 70px 0px 40px 0px;
+
+            h1 {
+                font-family: "DM Serif Display", sans-serif;
+                line-height: 10px;
+            }
+        }
+    }
+}
+
+.star {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.image-grid-container {
+    display: flex;
+    gap: 15px;
+
+    #africa1-main {
+        width: 650px;
+        border-radius: 30px;
+    }
+
+    .image-grid {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+
+        img {
+            width: 200px;
+            border-radius: 30px;
+        }
+    }
+}
+
+.second-main-container {
+    display: flex;
+    gap: 70px;
+    width: 1080px;
+    margin: 50px 0;
+
+    .details-container {
+        width: 700px;
+
+        h2 {
+            font-family: "DM Serif Display", sans-serif;
+            padding-bottom: 20px;
+            font-size: 27px;
+        }
+
+        p {
+            padding-bottom: 20px;
+        }
+
+        li {
+            list-style-type: none;
+
+            span {
+                color: #0099FF;
+                user-select: none;
+            }
+        }
+    }
+
+    .buttons-and-booking-info {
+        .detail-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            #pricebtn {
+                background-color: #FFFFFF;
+                border: 1px solid #000000;
+                height: 52px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 20px;
+                width: 360px;
+
+                &:hover {
+                    background-color: #EEEEEE;
+                }
+
+                &:active {
+                    background-color: #DDDDDD;
+                }
+
+                span {
+                    color: #0099FF;
+                }
+            }
+
+            #contactbtn {
+                background-color: #5C98F2;
+                color: #FFFFFF;
+                border: none;
+                height: 52px;
+                border-radius: 10px;
+                cursor: pointer;
+                font-size: 20px;
+                width: 360px;
+
+                &:hover {
+                    background-color: #5C5CF2;
+                }
+
+                &:active {
+                    background-color: #4B4BCC;
+                }
+            }
+        }
+
+        .booking-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            border-radius: 30px;
+            margin-top: 35px;
+            padding: 30px 0 22px 0;
+            box-shadow: 0px 5px 10px 0px #BBBBBB;
+
+            h2 {
+                font-family: "DM Serif Display", sans-serif;
+                font-size: 25px;
+                margin-right: 25px;
+            }
+
+            ul li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 14px;
+                
+                img {
+                    margin-right: 7px;
+                }
+            }
+        }
+        img {
+            width: 20px;
+        }
+    }
+}
+
+.third-main-container {
+    width: 1080px;
+    margin-bottom: 70px;
+
+    h2 {
+        font-family: "DM Serif Display", sans-serif;
+        font-size: 27px;
+        margin-bottom: 25px;
+    }
+
+    .tours {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+
+        .tour {
+            box-shadow: 0px 5px 10px 0px #BBBBBB;
+            border-radius: 20px;
+            cursor: pointer;
+            user-select: none;
+
+            &:active {
+                transform: scale(0.9);
+            }
+
+            .tour-details {
+                padding: 10px 0px 25px 10px;
+            }
+
+            h3 {
+                font-family: "DM Serif Display", sans-serif;
+            }
+
+            span {
+                color: #0099FF;
+            }
+
+            img {
+                width: 300px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            .star {
+                width: 15px;
+            }
+        }
+    }
+}
+
+footer {
+    height: 100%;
+    padding-top: 20px;
+    
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .footer-main-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 250px;
+    }
+
+    .list-and-socials ul li {
+        margin-bottom: 7px;
+        list-style-type: none;
+        cursor: pointer;
+
+        &:hover {
+            color: #0099FF;
+        }
+
+        &:active {
+            color: #004CFF;
+        }
+    }
+
+    .socials {
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+
+        img {
+            width: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .social-imgs {
+        h4 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+
+            img {
+                width: 55px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        padding: 40px 0px 25px 0px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header nav {
+        gap: 150px;
+
+        .header-links {
+            gap: 20px;
+        }
+    }
+    
+    .image-grid-container {
+        #africa1-main {
+            width: 437px;
+            height: 260px;
+        }
+
+        .image-grid img {
+            width: 122px;
+        }
+    }
+
+    .second-main-container {
+        width: 711px;
+        gap: 30px;
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .third-main-container {
+        width: 711px;
+
+        .tours {
+            gap: 25px;
+
+            .tour {
+                width: 220px;
+                
+                h3 {
+                    font-size: 14px;
+                }
+
+                img {
+                    width: 220px;
+                }
+            }
+        }
+    }
+
+    footer .footer-main-container {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    header {
+        nav {
+            width: 300px;
+            gap: 240px;
+
+            img {
+                display: none;
+            }
+
+            .header-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .full-main-container {
+            width: 300px;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .image-grid-container {
+                flex-direction: column;
+
+                #africa1-main {
+                    width: 300px;
+                    height: 200px;
+                }
+
+                .image-grid img {
+                    width: 140px;
+                }
+            }
+
+            .second-main-container {
+                width: 300px;
+                flex-direction: column;
+                justify-content: center;
+
+                .details-container {
+                    width: 300px;
+                }
+
+                .detail-buttons {
+                    #pricebtn {
+                        width: 300px;
+                    }
+
+                    #contactbtn {
+                        width: 300px;
+                    }
+                }
+            }
+
+            .third-main-container {
+                width: 300px;
+
+                .tours {
+                    flex-wrap: wrap;
+
+                    .tour {
+                        width: 300px;
+
+                        img {
+                            width: 300px;
+                        }
+
+                        .tour-details {
+                            h3 {
+                            font-size: 20px;
+                            }
+
+                            .star {
+                                width: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .footer-main-container {
+            width: 300px;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            .social-imgs img {
+                width: 40px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+}
